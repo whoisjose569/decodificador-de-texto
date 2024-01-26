@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="/img/logo.png" class="logo">
+    <textarea cols="30" rows="5" class="input-padrao" id="input-padrao" placeholder="Digite seu texto" required></textarea>
+    <section class="retangulo">
+        <img id="img-do-retangulo" src="/img/img.png">
+        </section>
+        <section class="info-retangulo" id="info-retangulo">
+            <h4>Nenhuma mensagem encontrada</h4>
+            <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+        </section>
+    <section class="info">
+            <img class="vetor" src="/img/info.png">
+            <p class="aviso">Apenas letras minúsculas e sem acento.</p>
+    </section>
+    <section class="botoes">
+        <button class="bt-cripto" id="bt-cripto" onclick="criptoTexto()">Criptografar</button>
+        <button class="bt-descripto" id="bt-descripto" onclick="decriptoTexto()">Descriptografar</button>
+    </section>
+    <section id="dados-decodificador">
+        <textarea class="resultado-do-texto" id="resultado-do-texto" readonly></textarea>
+        <button class="bt-copiar" id="bt-copiar" onclick="copiaTexto()">Copiar</button>
+    </section>
+    <script src="/js/app.js" defer></script>
+</body>
+</html>
