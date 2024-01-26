@@ -2,6 +2,10 @@ body {
     font-family: 'Inter', sans-serif;
     background: #F3F5FC;
     position: relative;
+    width: 100%;
+    height: 500px;
+    min-width: 300px;
+    max-width: 1200px;
 }
 
 .logo{
